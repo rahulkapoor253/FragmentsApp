@@ -32,14 +32,6 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     /**
      *
-     * @return context;
-     */
-    private Context getContext() {
-        return mContext;
-    }
-
-    /**
-     *
      * @param parent paernt argument;
      * @param viewType view type;
      * @return returns the object of DataHolder;

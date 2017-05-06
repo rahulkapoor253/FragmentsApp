@@ -15,10 +15,9 @@
  */
 package com.example.android.miwok;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
 /**
  * this activity is the main activity and works on intents;
@@ -33,35 +32,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        ViewAdapter adapter = new ViewAdapter(getSupportFragmentManager());
+
+        viewPager.setAdapter(adapter);
 
 
     }
 
-    /**
-     *@param view calls for intent to number class
-     */
-    public void submitNumbers(final View view) {
-        Intent intent = new Intent(this, Numbers.class);
-        startActivity(intent);
-    }
 
-    /**
-     *@param view calls for intent to family class
-     */
-    public void submitFamily(final View view) {
-        Intent intent = new Intent(this, Family.class);
-        startActivity(intent);
-
-    }
-
-    /**
-     *@param view calls for intent to phrases class
-     */
-    public void submitPhrases(final View view) {
-        Intent intent = new Intent(this, Phrases.class);
-        startActivity(intent);
-
-    }
 
 
 }

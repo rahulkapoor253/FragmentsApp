@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/ll_frag"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ListView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/listview"
-        >
-
-    </ListView>
+        android:text="Fragment app"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        />
 
 
 </LinearLayout>
